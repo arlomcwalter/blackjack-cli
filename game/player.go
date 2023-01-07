@@ -28,7 +28,7 @@ func newPlayer(dealer bool) Player {
 }
 
 func (p Player) handString(hide bool) string {
-	return fmt.Sprintf("%s: %s[%s]", p.name, p.hand.cardString(hide), p.hand.valueString(hide))
+	return fmt.Sprintf("%s: %s [%s]", p.name, p.hand.valueString(hide), p.hand.cardString(hide))
 }
 
 func (h Hand) finalValue() int {

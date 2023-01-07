@@ -1,3 +1,3 @@
-# cli-blackjack
+# Blackjack CLI
 
-A CLI version of the blackjack game written in Go.
+A simple CLI blackjack game written in Go.
