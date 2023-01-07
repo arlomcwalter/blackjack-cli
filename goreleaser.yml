@@ -1,5 +1,5 @@
 builds:
-  - binary: blackjack
+  - binary: bj-cli
     goarch:
       - amd64
       - arm64
