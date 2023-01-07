@@ -9,5 +9,17 @@ builds:
 universal_binaries:
   - replace: true
 
+brews:
+  - name: bj-cli
+    homepage: "https://github.com/arlomcwalter/bj-cli"
+    description: "A simple CLI blackjack game written in Go"
+    folder: Formula
+    tap:
+      owner: arlomcwalter
+      name: homebrew-tap
+    commit_author:
+      name: arlomcwalter
+      email: mcwalterarlo@gmail.com
+
 checksum:
   name_template: 'checksums.txt'
