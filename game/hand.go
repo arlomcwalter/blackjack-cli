@@ -11,10 +11,6 @@ func newHand() Hand {
 	return Hand{newCard(), newCard()}
 }
 
-func (h Hand) String(dealer bool) string {
-	return fmt.Sprintf("%s[%s]", h.cardString(dealer), h.valueString(dealer))
-}
-
 func (h Hand) cardString(dealer bool) string {
 	var cards string
 
@@ -25,7 +21,9 @@ func (h Hand) cardString(dealer bool) string {
 			cards += card.String()
 		}
 
-		cards += " "
+		if i != len(h)-1 {
+			cards += " "
+		}
 	}
 
 	return cards
